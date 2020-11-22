@@ -43,6 +43,11 @@ nav > ul > li{
 	padding-bottom: 17px;
 }
 
+nav > ul > li > a{
+	text-decoration: none;
+	color: white;
+}
+
 nav > ul > li:hover{
 	background-color: yellow;
 	cursor: pointer;
@@ -53,6 +58,37 @@ nav > ul > li > i{
 	height: 12px;
 	color: white;
 	margin-left: 4px;
+}
+
+.submenu{
+	position: relative;
+}
+
+.subje{
+	display: none;
+	margin-top: 34px;
+	left: 0px;
+	padding: 5px 5px;
+	background-color: #222931;
+	list-style: none;
+}
+
+.subje > li{
+	padding: 5px 20px;
+	text-decoration: none;
+}
+
+.subje > li:hover{
+	background-color: yellow;
+}
+
+.submenu:hover{
+	cursor: pointer;
+}
+
+.submenu:hover .subje{
+	display: inline-block;
+	position: absolute;
 }
 
 .langen{
@@ -80,6 +116,54 @@ nav > ul > li > i{
 .driefotos > img{
 	padding: 50px 10px;
 }
+
+.grotetext{
+	grid-row-start: 3;
+	grid-row-end: 4;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	margin-top: 45px;
+	display: block;
+	height: auto;
+	width: 1200px;
+	margin-left: 175px;
+}
+
+.grotetext > h4{
+	font-size: 30px;
+}
+
+.grotetext > p{
+	margin-top: 20px;
+}
+
+.hulp{
+	color: yellow;
+	cursor: pointer;
+	position: relative;
+}
+
+.tip{
+	display: none
+}
+
+.hulp:hover{
+	cursor: pointer;
+}
+
+.hulp:hover .tip{
+	display: block;
+	position: absolute;
+	background-color: gray;
+	left: 0px;
+	top: 18px;
+	width: 215px;
+	height: auto;
+	color: white;
+	padding: 5px 20px;
+}
+
+
 
 .geelbalkje{
 	grid-row-start: 3;
@@ -221,12 +305,12 @@ nav > ul > li > i{
 }
 
 .text > p{
-	font-size: 20px;
+	font-size: 16px;
 	display: block;
 	width: 500px;
 	height: auto;
 	margin-left: 15%;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 
 .contact1{
@@ -288,6 +372,6 @@ footer > p{
 	margin-top: 17px;
 }
 
-h1, h2, h3, p, li{
+h1, h2, h3, h4, p, li{
 font-family: 'Archivo', sans-serif;
 }
